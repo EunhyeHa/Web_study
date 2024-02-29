@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>tableEx2</title>
+</head>
+
+<body>
+  <h1>테이블 연습 2</h1>
+  <table border="1">
+    <caption>여름이 온다 그림책 안내</caption>
+    
+    <!-- thead 표의 머릿말 -->
+    <thead>
+    <tr><!-- 1행 -->
+      <th colspan="3">그림책 소개</th>
+    </tr>
+    </thead>
+
+    <!-- tbody 표의 본문 -->
+    <tbody>
+    <tr><!-- 2행 -->
+      <th colspan="3">여름이 온다</th>
+    </tr>
+
+    <!-- 이미지 자체에 링크 <a>태그 안에 <img> 태그를 넣는다 -->
+    <!-- 외부 사이트로 이동 : target-"_blank" -->
+    <tr><!-- 3행 -->
+      <td rowspan="3">
+        <a href="https://yes24.com/Product/Goods/102965090" target="_blank">
+        <img src="./images/여름이온다.jfif" alt="여름이 온다 책 커버">
+        </a>
+      </td>
+      <th>글</th>
+      <td>이수지</td>
+    </tr>
+
+    <tr><!-- 4행 -->
+      <th>그림</th>
+      <td>이수지</td>
+    </tr>
+    <tr><!-- 5행 -->
+      <th>가격</th>
+      <td>27,000원</td>
+    </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
