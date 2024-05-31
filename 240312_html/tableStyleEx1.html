@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>tableEx1</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    table {
+      font-size: 20px;
+      border-collapse: collapse;
+      margin: auto;
+    }
+    table tbody tr td {
+      padding: 15px 40px 15px;
+      background-color: #b2e64a;
+      outline: 1px solid;
+    }
+    .box1 {
+      background-color: #fff;
+    }
+    .box2 {
+      background-color: #fff;
+    }
+    .box3 {
+      background-color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>테이블 스타일 연습 2</h2>
+  <table border="2" class="box1">
+    <caption>소</caption>
+    <tbody>
+    <tr>
+      <td>소머리</td>
+      <td>목심</td>
+      <td>등심<br>(살치살 · <a href="https://namu.wiki/w/%EB%93%B1%EC%8B%AC" target="_blank">꽃등심</a>)</td>
+      <td>채끝살</td>
+      <td>우둔<br>(홍두깨살)</td>
+    </tr>
+    
+    <tr>
+      <td rowspan="4" class="box1"></td>
+      <td rowspan="2">앞다리<br>(부채살)</td>
+      <td>갈비<br>(안창살 · 제비추리)</td>
+      <td>안심</td>
+      <td rowspan="2">설도<br>(도가니살)</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">양지<br>(차돌박이 · 우삼겹)</td>
+    </tr>
+
+    <tr>
+      <td>사태</td>
+      <td colspan="2" rowspan="2" class="box2"></td>
+      <td>사태<br>(아롱사태)</td>
+      </tr>
+
+    <tr>
+      <td class="box3">우족</td>
+      <td class="box3">우족</td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>

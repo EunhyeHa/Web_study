@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+.table-wrapper {
+  height: 484px;
+  background-image: url(./assets/images/footer.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 0 10px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  position: relative;
+}
+
+.table-wrapper .txt {
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  top: 445px;
+  left: 247px;
+}
+
+.table-wrapper .table1 {
+  color: #fff;
+  padding-top: 70px;
+}
+.table-wrapper .table1 h1 {
+  margin: 20px 0 5px;
+  font-size: 40px;
+}
+.table-wrapper .table1 p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.table-wrapper .table2 {
+  color: #fff;
+  padding-top: 70px;
+}
+.table-wrapper .table2 h1 {
+  margin: 20px 0 5px;
+  font-size: 40px;
+}
+.table-wrapper .table2 p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.table-wrapper .table3 {
+  color: #fff;
+  padding: 45px 0 105px;
+}
+.table-wrapper .table3 h1 {
+  margin: 20px 0 5px;
+  font-size: 40px;
+}
+.table-wrapper .table3 p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.table-wrapper .table4 {
+  color: #fff;
+  padding: 45px 0 105px;
+}
+.table-wrapper .table4 h1 {
+  margin: 20px 0 5px;
+  font-size: 40px;
+}
+.table-wrapper .table4 p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}

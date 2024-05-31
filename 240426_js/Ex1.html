@@ -1,0 +1,19 @@
+<body>
+  <!-- 1보다 큰 수를 입력해서 입력한 숫자까지 짝수만 더하는 식을 만드시오. -->
+  <script>
+    const num = prompt('숫자를 입력해 주세요');
+    let total = 0;
+
+  if(num > 1) {
+
+      for(let i = 2; i <= num; i += 2) {
+        total += i;
+      }
+      alert(`${num}중에 짝수만 더한 값은 ${total}입니다.`);
+
+  } else {
+    alert('1보다 큰 수를 입력해주세요.');
+  }
+
+  </script>
+</body>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>trasition-timing-function</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    .container {
+      width: 80vw; height: 70vh;
+      margin: 0 auto; 
+      padding: 0;
+      border: 3px solid #000;
+      list-style: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+
+      display: flex;
+      justify-content: center;
+    }
+    .container li {
+      /* flex-grow: 1; 도 사용 가능 */
+      flex-shrink: 0;
+      width: calc(17% - 0.8rem); 
+      height: 2rem;
+      line-height: 2rem;
+      background-color: #ddd;
+      margin: 5px;
+
+      transition-property: all;
+      transition-duration: 1s;
+    }
+
+    .container:hover li:nth-child(1) {
+      height: calc(100% - 0.8rem);
+      background-color: plum;
+
+      transition-timing-function: linear;
+    }
+    .container:hover li:nth-child(2) {
+      height: calc(100% - 0.8rem);
+      background-color: pink;
+
+      transition-timing-function: ease;
+    }
+    .container:hover li:nth-child(3) {
+      height: calc(100% - 0.8rem);
+      background-color: palevioletred;
+
+      transition-timing-function: ease-in;
+    }
+    .container:hover li:nth-child(4) {
+      height: calc(100% - 0.8rem);
+      background-color: powderblue;
+
+      transition-timing-function: ease-out;
+    }
+    .container:hover li:nth-child(5) {
+      height: calc(100% - 0.8rem);
+      background-color: palegreen;
+
+      transition-timing-function: ease-in-out;
+    }
+    .container:hover li:nth-child(6) {
+      height: calc(100% - 0.8rem);
+      background-color: peru;
+
+      transition-timing-function: cubic-bezier(.02,.65,1,.06);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>transition-delay</h1>
+  <h2>움직임 형태 제어</h2>
+  <ul class="container">
+    <li>linear</li>
+    <li>ease</li>
+    <li>ease-in</li>
+    <li>ease-out</li>
+    <li>ease-in-out</li>
+    <li>cubic-beizer()</li>
+    <!-- 참고 사이트
+       ㄴ https://cubic-bezier.com/#.17,.67,.83,.67 
+       ㄴ 사용자 형태의 움직임 -->
+  </ul>
+</body>
+</html>

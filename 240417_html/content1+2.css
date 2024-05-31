@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* title */
+.content-wrapper {
+  padding: 22px;
+  text-align: center; 
+}
+.content-wrapper .content-box .liner {
+  background: linear-gradient(0deg, #8AABFF 50%, transparent 50%);
+}
+.content-wrapper .content-box h1 {
+  margin: 20px;
+  font-size: 27px;
+  font-weight: 800;
+}
+.content-wrapper .content-box p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #525252;
+}
+
+/* image list */
+.content-wrapper .img-box {
+  /* width: 364px; height: 364px; */
+  margin: 0 auto;
+}
+.content-wrapper .img-box .box1 {
+  /* width: 100% */
+  position: relative;
+  padding-bottom: 18px;
+}
+.content-wrapper .img-box .box1 > img {
+  width: 364px; height: 364px;
+  border-radius: 35px;
+}
+.content-wrapper .img-box .box1 h3 {
+  font-size: 22px;
+  color: #fff;
+  position: absolute;
+  top: 272px;
+  left: 34px;
+}
+
+.content-wrapper .img-box .box2 {
+  /* width: 100% */
+  position: relative;
+  padding-bottom: 18px;
+}
+.content-wrapper .img-box .box2 > img {
+  width: 364px; height: 364px;
+  border-radius: 35px;
+}
+.content-wrapper .img-box .box2 h3 {
+  font-size: 22px;
+  color: #fff;
+  position: absolute;
+  top: 272px;
+  left: 34px;
+}
+
+.content-wrapper .img-box .box3 {
+  /* width: 100% */
+  position: relative;
+  padding-bottom: 18px;
+}
+.content-wrapper .img-box .box3 > img {
+  width: 364px; height: 364px;
+  border-radius: 35px;
+}
+.content-wrapper .img-box .box3 h3 {
+  font-size: 22px;
+  color: #fff;
+  position: absolute;
+  top: 272px;
+  left: 34px;
+}
+
+/* Content2 */
+.content-wrapper2 {
+  padding-top: 25px;
+  padding-bottom: 63px;
+}
+
+.content-wrapper2 .image-map .box-btn {
+  height: 71px;
+  border-radius: 20px;
+  box-shadow:
+  0.7px 0.7px 2.2px rgba(0, 0, 0, 0.02),
+  1.7px 1.7px 5.2px rgba(0, 0, 0, 0.028),
+  3.3px 3.3px 9.8px rgba(0, 0, 0, 0.035),
+  5.8px 5.8px 17.4px rgba(0, 0, 0, 0.042),
+  10.9px 10.9px 32.6px rgba(0, 0, 0, 0.05),
+  26px 26px 78px rgba(0, 0, 0, 0.07);
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content-wrapper2 .image-map .box-btn .button {
+  padding-left: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #192B64;
+}
+.content-wrapper2 .image-map .box-btn img {
+  padding-left: 19px;
+  align-self: center;
+}

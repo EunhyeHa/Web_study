@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>요소 실제 크기2</title>
+  <style>
+    body {
+      /* 어절 줄바꿈 */
+      word-break: normal;
+      word-break: break-all; /* 어절에 맞춰 줄바꿈 영어 한정 */
+      word-break: keep-all; /* 어절을 유지하며 줄바꿈. 한글적용 */
+    }
+    .box {
+      font-weight: bold;
+      background-color: #ddd;
+      font-size: 20px;
+    }
+    .box1 {
+      background-color: violet;
+      color: #fff;
+      width: 400px; height: 300px;
+      outline: 10px solid #F7418F;
+      margin: 50px auto; /* auto = 0으로 계산 */
+    }
+    .box2 {
+      border: solid 3px #76c008;
+      width: 300px; height: 300px;
+      margin: 0 auto;
+      padding-top: 100px; padding-left: 20px;
+    }
+    .box3 {
+      background-color: #FFA732;
+      outline: 4px solid #000;
+      width: 300px; height: 400px;
+      margin: 20px auto 0;  /* 주의주의 값 잘 보기 !!! */
+      padding: 20px 10px 0 30px;
+    }
+    .box4 {
+      background-color: violet;
+      border: dotted 2px violet;
+      border-top: none;
+      width: 400px; height: 200px;
+      outline: thistle 30px solid;
+      margin: 20px auto 0;
+      padding: 10px 20px 0 0;
+    }
+    .box5 {
+      background-color: tomato;
+      width: 600px; height: 250px;
+      padding: 50px 20px;
+      /* border-top: #000 dashed 10px; border-bottom: #000 dashed 10px;
+      border-right: #ffdbab dotted 5px; border-left: #ffdbab dotted 5px;
+     */
+      border: 10px solid #000;
+      border-right-width: 5px;
+      border-left-width: 5px;
+    }
+      .box6 {
+      width: 150px; height: 200px;
+      margin: 50px auto 0;
+      padding: 10px 50px 50px 50px;
+      border: 4px solid orange;
+      border-top-width: 10px;
+      border-bottom-width: 5px;
+    }
+      </style>
+</head>
+<!--
+  width + margin-left + margin-right + padding-left + padding-right + border-left + border-right
+  height + margin-top + margin-bottom + padding-top + padding-bottom + border-top + border-bottom -->
+<body>
+  <h1>요소의 실제 크기2</h1>
+  <div class="box box1">
+    <p>너비: W400+m0+m0+p0+p0+b0+b0=400px</p>
+    <p>높이: h300+m50+m50+p0+p0+b0+b0=400px</p>
+  </div>
+  <div class="box box2">
+    <p>너비: w300+m0+m0+p20+p0+b3+b3=326px</p>
+    <p>높이: h300+m0+m0+p100+p0+b3+b3=406px</p>
+  </div>
+  <div class="box box3">
+    <p>너비: w300+m0+m0+p30+p10+b0+b0=340px</p>
+    <p>높이: h400+m20+m0+p20+p0+b0+b0=440px</p>
+  </div>
+  <div class="box box4">
+    <p>너비: w400+m0+m0+p0+p20+b2+b2=424px</p>
+    <p>높이: h200+m20+m0+p10+p0+b0+b2=232px</p>
+  </div>
+  <div class="box box5">
+    <p>너비: w600+m0+0+p20+20+b5+5=650px</p>
+    <p>높이: h250+m0+0+p50+50+b10+10=370px</p>
+  </div>
+  <div class="box box6">
+    <p>너비: w150+m0+0+p50+50+b4+4=258</p>
+    <p>높이: h200+m50+0+p10+50+b10+5=325px</p>
+    <p>모든 국민은 학문과 예술의 자유를 가진다. 대통령은 국가의 독립·영토의 보전·국가의 계속성과 헌법을 수호할 책무를 진다.</p>
+  </div>
+
+</body>
+</html>

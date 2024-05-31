@@ -1,0 +1,56 @@
+<body>
+  <h1>오늘의 운세는?</h1>
+  <script>
+    let dayInput = prompt('월~일 중에 요일을 입력해주세요');
+    let day = 0;
+
+    switch (dayInput) {
+      case '월':
+        day = 1;
+        break;
+      case '화':
+        day = 2;
+        break;
+      case '수':
+        day = 3;
+        break;
+      case '목':
+        day = 4;
+        break;
+      case '금':
+        day = 5;
+        break;
+      case '토':
+        day = 6;
+        break;
+      case '일':
+        day = 7;
+        break;
+
+      default: 
+        alert('요일만 입력해 주세요');
+        location.reload();
+    }
+
+    let randomNum = Math.floor(Math.random() * 7) + 1;
+    let msg = "";
+
+    if (day === randomNum) {
+      msg = `${dayInput}요일의 운세 : 행운!`;
+    } else if (randomNum === 2) {
+      msg = `${dayInput}요일의 운세 : 초불행🤯`;
+    } else if (randomNum === 3) {
+      msg = `${dayInput}요일의 운세 : 아무 일도 없는 날★`;
+    } else if (randomNum === 4) {
+      msg = `${dayInput}요일의 운세 : 이불 밖은 위험해`;
+    } else if (randomNum === 5) {
+      msg = `${dayInput}요일의 운세 : 그럭저럭`;
+    } else if (randomNum === 6) {
+      msg = `${dayInput}요일의 운세 : 굿이네요굿굿굿`;
+    } else if (randomNum === 7) {
+      msg = `${dayInput}요일의 운세 : 무난`;
+    }
+
+    document.body.innerHTML = `<h1>${msg}</h1>`;
+  </script>
+</body>

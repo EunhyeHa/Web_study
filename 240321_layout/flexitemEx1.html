@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>flexitemEx1</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: auto; padding: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      
+      align-items: center;
+    }
+    .container .item1 {
+      background-color:#6bb7f5;
+      width: 100%; height: 10vh;
+      order: 1;
+    }
+    .container .item2 {
+      background-color:#e46d0b; 
+      order: 2;
+      flex-grow: 2;
+      flex-grow: 75;
+      height: 100%;
+    }
+    .container .item3 {
+      background-color:#960303;
+      order: 3;
+      flex-grow: 3;
+      flex-grow: 25;
+      height: 30vh;
+    }
+    /* .container .item1 {
+      display: block;
+      width: 100vw;
+      height: 10vh;
+    }
+    .container .box {
+      display: flex;
+      width: 30vw;
+      height: 90vh;
+      /* flex-direction: row; */
+  </style>
+</head>
+
+<body>
+  <ul class="container">
+    <li class="item item1">header</li>
+    <li class="item item2">aside</li>
+    <li class="item item3">contents</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>transition-delay</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    .container {
+      width: 80vw; height: 70vh;
+      margin: 0 auto; 
+      padding: 0;
+      border: 3px solid #000;
+      list-style: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+
+      display: flex;
+      justify-content: center;
+    }
+    .container li {
+      /* flex-grow: 1; 도 사용 가능 */
+      flex-shrink: 0;
+      width: calc(20% - 0.8rem); 
+      height: 2rem;
+      line-height: 2rem;
+      background-color: #ddd;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>transition-delay</h1>
+  <ul class="container">
+    <li>바로 진행</li>
+    <li>0.5초</li>
+    <li>1초</li>
+    <li>2초</li>
+    <li>3초</li>
+  </ul>
+</body>
+</html>

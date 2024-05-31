@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+body {
+  background-color:plum;
+}
+
+h2 {
+  background-color: white;
+}
+
+#box1 {
+  color: deeppink;
+}
+#box2 {
+  color: blueviolet;
+}
+#box3 {
+  color: orange;
+}
+#box4 {
+  color: lightblue;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>positionEx5</title>
+  <style>
+    body, h1 {
+      margin: 0; padding: 0;
+      text-align: center;
+      line-height: 1.6;
+      text-transform: capitalize;
+    }
+    h1 {
+      background-color: orange;
+      text-align: center;
+      padding: 50px 0;
+    }
+    .gnb {
+      list-style: none;
+      margin: 0; padding: 0;
+
+      display: flex;
+      position: sticky;
+      top: 0;
+    }
+    .gnb li {
+      width: 25%;
+      text-align: center;
+    }
+    .gnb li a {
+      /* 100vw가 아닌 100%값으로 줘야 문제가 생기지 않음
+        viewport 단위는 스크롤을 인식하지 못하기 때문에.. */
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      background-color: tomato;
+      color: #fff;
+      padding: 10px 0; /*인라인은 레이아웃 구성할 때 잘 사용하지 않는다, 넘쳐서*/
+    }
+
+    .gnb li a:hover {
+      background-color: yellow;
+      color: orangered;
+    }
+    .container {
+      width: 50%;
+      margin: 50px auto;
+    }
+    .container p {
+      margin: 100px 0;
+    }
+    /* 12~ 내가 입력한 값 */
+    /* h1 {
+      background-color: #00009e;
+      color: #fff;
+      margin: auto;
+      padding: 50px;
+    }
+    .container {
+      margin: auto;
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #4a4aec;
+      color: #fff;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+    article {
+      margin: auto;
+      padding: 70px 0 0 0;
+      width: 500px;
+      text-align: left;
+      line-height: 1.5;
+    } */
+  </style>
+</head>
+
+<body>
+    <h1>LayoutEx1</h1>
+    <!-- ul.gnb>li*4>a{menu$} -->
+    <ul class="gnb">
+      <li><a href="#">menu1</a></li>
+      <li><a href="#">menu2</a></li>
+      <li><a href="#">menu3</a></li>
+      <li><a href="#">menu4</a></li>
+    </ul>
+
+  <div class="container">
+  <article>
+    <p>누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.</p>
+  </article>
+  
+  <article>
+    <p>누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.</p>
+  </article>
+
+  <article>
+    <p>누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.</p>
+  </article>
+
+  <article>
+    <p>누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.</p>
+  </article>
+</div>
+</body>
+</html>

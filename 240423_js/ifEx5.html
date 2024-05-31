@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>ifEx5</title>
+  <style>
+    body {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ifEx5</h1>
+  <!-- <ul>
+    <li><img src="./images/food1.jpg" alt="img1"></li>
+    <li><img src="./images/food2.jpg" alt="img2"></li>
+    <li><img src="./images/food3.jpg" alt="img3"></li>
+    <li><img src="./images/food4.jpg" alt="img41"></li>
+  </ul> -->
+
+  <script>
+    // document.body.innerHTML = "<h2>문제</h2>"
+    // document.write("<h2>문제</h2>");
+
+    // 1~4사이의 숫자를 입력하면 해당 번호의 이미지를 출력
+    let num = prompt('1~4 사이의 숫자를 입력하세요');
+
+    /* 데이터값까지 확인하는 '엄격한비교(===)' 쓰려면, 1 ->'1'(문자열)로 바꿔줘야함
+    if(num === '1') {
+      document.body.innerHTML += '<li><img src="./images/food1.jpg" alt="img1"></li>';
+    } else if(num === '2') {
+      document.body.innerHTML += '<li><img src="./images/food2.jpg" alt="img2"></li>';
+    } else if(num === '3') {
+      document.body.innerHTML += '<li><img src="./images/food3.jpg" alt="img3"></li>';
+    } else if(num === '4') {
+      document.body.innerHTML += '<li><img src="./images/food4.jpg" alt="img4"></li>';
+    } else {
+      alert('해당 번호만 입력해 주세요');
+    }
+    */
+
+    // 숫자 데이터 타입으로 변환
+    // num = Number(num);
+    // num = parseInt(num);
+    // num = +num;
+    num = num * 1;
+
+    if(num === 1) {
+      document.body.innerHTML += '<li><img src="./images/food1.jpg" alt="img1"></li>';
+    } else if(num === 2) {
+      document.body.innerHTML += '<li><img src="./images/food2.jpg" alt="img2"></li>';
+    } else if(num === 3) {
+      document.body.innerHTML += '<li><img src="./images/food3.jpg" alt="img3"></li>';
+    } else if(num === 4) {
+      document.body.innerHTML += '<li><img src="./images/food4.jpg" alt="img4"></li>';
+    } else {
+      alert('해당 번호만 입력해 주세요');
+    }    
+  </script>
+</body>
+
+</html>

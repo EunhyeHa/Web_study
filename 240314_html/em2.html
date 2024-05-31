@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>em2</title>
+  <style>
+    body {
+      font-size: 16px;
+    }
+    .container {
+      font-weight: bold;
+      background-color: #007F73;
+      color: #fff;
+      width: 600px; height: 400px;
+      width: em; height: em;
+      margin: 30px auto;
+      margin: em auto;
+    }
+    .container .wrapper {
+
+    }
+    .container .box {
+      background-color: tomato;
+      width: 400px; height: 200px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>em 단위</h1>
+  <ul>
+    <li>나를 감싸고 있는 <strong>부모 요소의 font-size</strong>를 기준으로 계산</li>
+  </ul>
+
+  <div class="container">
+    .container
+    <div class="wrapper">
+      .wrapper
+      <div class="box">.box</div>
+    </div>
+  </div>
+</body>
+</html>

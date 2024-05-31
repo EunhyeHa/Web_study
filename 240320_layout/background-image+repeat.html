@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>background-image+repeat</title>
+  <style>
+    body {
+      /* 배경이미지 적용 가능(별개의 성격) */
+      background-image: url(./images/header.gif);
+      background-repeat: repeat-x;
+      margin: 0;
+    }
+    h1 {
+      /* background-image: url(./images/header.gif); */
+      /* margin: 0; */
+      /* padding: 28px; */
+    }
+    
+    p {
+      background-image: url(./images/more-leaves.png);
+      padding: 10px;
+    }
+    /* p:last-child { */
+    /* p:last-of-type { */
+    /* p:nth-child(5) { */
+    p:nth-of-type(2) {
+      background-size: 30px;
+      
+      background-color: orange;
+      background-repeat: repeat; /* 반복. 기본값 */
+      background-repeat: repeat-y; /* y축 반복 */
+      background-repeat: repeat-x; /* x축 반복 */
+      /* background-repeat: no-repeat; 반복 없음 */
+    }
+    </style>
+</head>
+
+<body>
+  <h1>배경이미지</h1>
+  <h2>background-image</h2>
+  <p>책임이다 일의 그 임신으로, 가능하던 있다. 
+    머리다 행위다 무용가와 문의 가무잡잡하다. 표정이고 단것의, 일어나아서 비즈니스도 정부에게 밀리는 과학화를 흐름이 생각하여. 
+    에프엠은 파는 남자가 대성당을 부친이 국제보다 대책을 하여 하다. 직접 겨냥하다 수 이만 할지.</p>
+
+  <h2>background-repeat</h2>
+  <p> 확실하는데 달라지어 합당 없는 강하는 거 이용하다. 주라 죽다, 간사는 값은, 질문을 수 알다. 
+    건축가를 되어서 술상을 있은 보도하듯이 밭이지요 거칩니다. 별문제라고 그를 관철한 가사가 사퇴도 말하여서 없다.
+    별문제라고 그를 관철한 가사가 사퇴도 말하여서 없다.별문제라고 그를 관철한 가사가 사퇴도 말하여서 없다.</p>
+</body>
+</html>

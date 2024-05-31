@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>postionEx1</title>
+  <style>
+    .container {
+      list-style: none;
+      margin: 50px auto; 
+      padding: 0;
+      background-color: #1f21b4;
+      width: 400px; height: 400px;
+      font-weight: bold;
+      position: relative;
+      /* relative : 
+          ㄴ 위치값을 쓰지 않으면 일반적인 흐름을 가짐.
+          ㄴ relative; 일반적인 흐름에 따라 자기 자신을 기준으로 위치 지정. top, right, bottom, left 위치 특성과 함께 사용되거나 생략될 수 있음.
+       */
+    }
+    .container .box {
+      background-color:orange;
+      color: #fff;
+      width: 50px; height: 50px;
+      text-align: center;
+      line-height: 50px;
+      position: absolute;
+      /* display: fle x;
+      justify-content: center;
+      align-items: center; */
+    }
+    .container .box1 {
+      /* position: absolute; */
+      top: 0; left: 0;
+    }
+    .container .box2 {
+      top: 0; right: 0;
+    }
+    .container .box3 {
+      bottom: 0; left: 0;
+    }
+    .container .box4 {
+      bottom: 0; right: 0;
+    }
+    .container .box5 { /* 정중앙에 위치 시키기 */
+      /* top: 50%; left: 50%;
+      margin-top: -25px; margin-left: -25px; */
+      top: 0; bottom: 0; left: 0; right: 0;
+      margin: auto;
+      /* 높이 값이 있어야만 세로 중앙 정렬 가능 */
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="container">
+    <li class="box box1">1</li>
+    <li class="box box2">2</li>
+    <li class="box box3">3</li>
+    <li class="box box4">4</li>
+    <li class="box box5">5</li>
+  </ul>
+</body>
+</html>

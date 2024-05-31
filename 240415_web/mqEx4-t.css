@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@media (min-width: 768px) {
+  nav .mobile-btn {
+    display: none;
+  }
+
+  nav .global-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border-bottom: 2px solid rgba(255,255,255,0.85); */
+    box-shadow: 0 2px rgba(255,255,255,0.85);
+  }
+  nav .global-menu li:nth-child(odd) a {
+    border-right: 1px solid #fff;
+  }
+  nav .global-menu li:nth-child a {
+    border-bottom: none;
+  }
+}

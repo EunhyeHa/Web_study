@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>블록요소중앙정렬</title>
+  <style>
+    body {
+      margin: 0px;
+      font-weight: bold;
+    }
+    h1 {
+      background-color: teal;
+      color: yellow;
+      padding: 10px;
+      margin: 0px;
+    }
+  .box {
+    width: 60%;
+    height: 100px;
+    background-color: #efefef;
+    border: 10px solid orange;
+    text-align: center;
+  }
+  .box .txt { /*하위 선택자 */
+    background-color: #c6e63b;
+    /* text-align: center; */
+  }
+  
+  .box2 {
+    /* 
+      블록요소 중앙 정렬
+      1. 요소의 가로 값이 필요
+      2. 일반적인 흐름
+      3. 해당 요소에 적용
+    */
+    margin: 0 auto 0 auto; /* top right bottom left */ 
+    margin: 20px auto; /* top+bottom right+left */
+    margin: auto; /* 가로 중앙 정렬만. 세로 중앙 정렬 X */
+    margin: 20px auto 0; /* top right+left bottom */
+  }
+
+  .box2 .txt {
+    width: 60%;
+    margin: 20px auto;
+  }
+  /* 
+  .box1 {
+    font-family: '나눔고딕', '맑은 고딕',돋움,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aliceblue;
+    color: teal;
+    width: 320px;
+    text-align: center;
+    border: 15px solid #900C3F;
+    padding: 0px 50px 50px;
+  }
+  */
+  </style>
+</head>
+
+<body>
+  <h1>블록 요소의 중앙 정렬</h1>
+  <p class="box box1">
+    <span class="txt">인라인 요소 및 컨텐츠의 중앙 정렬</span>
+    <!-- span은 공간이 없기 때문에 움직임이 보이지 않음 / 스타일을 주려면 p에 주면됨-->
+    <!-- 인라인의 중앙정렬은 항상 text-align 안에 있어야 함(?) / position은 고정 돼서 잘 쓰지 않음. -->
+  </p>
+  <div class="box box2">
+    <div class="txt">블록 요소의 중앙 정렬</div>
+  </div>
+
+</body>
+</html>

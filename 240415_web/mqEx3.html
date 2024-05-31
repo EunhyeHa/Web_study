@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>mqEx3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    body {
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .wrapper {
+      list-style: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 20px; 
+      margin: 0;
+      background-color: skyblue;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .wrapper .box {
+      width: calc(50% - 10px);
+      background-color: bisque;
+      padding: 5px 0;
+    }
+    .wrapper .none {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      /* 3열 */
+      .wrapper .box {
+        background-color: palevioletred;
+        color: #fff;
+        width: calc(33.33333% - 10px);
+      }
+      .wrapper .box:last-child {
+        display: none;
+      }
+    }
+
+    @media (min-width: 960px) {
+      /* 4열 */
+      .wrapper {
+        background-color: blanchedalmond;
+        padding: 50px;
+        font-size: 1.3rem;
+      }
+      .wrapper .box {
+        width: calc(25% - 10px);
+      }
+      .wrapper .box:last-child {
+        display: block;
+        background-color: purple;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      /* 5열 */
+      .wrapper {
+        width: 90vw;
+        margin: 0 auto;
+        font-size: 2rem;
+        gap: 16px;
+      }
+      .wrapper .box {
+        width: calc(20% - 16px);
+        padding: 20px 0;
+      }
+      .wrapper .none {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box">txt1</div>
+    <div class="box">txt2</div>
+    <div class="box">txt3</div>
+    <div class="box none">txt4</div>
+    <div class="box">txt5</div>
+    <div class="box">txt6</div>
+    <div class="box">txt7</div>
+    <div class="box">txt8</div>
+    <div class="box">txt9</div>
+    <div class="box">txt10</div>
+  </div>
+</body>
+</html>

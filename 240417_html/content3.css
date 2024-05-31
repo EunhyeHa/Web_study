@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+.list-wrapper {
+  background-color: #F5F5F5;
+  padding: 36px 22px 42px;
+  text-align: center;
+}
+.list-wrapper h1 {
+  margin: 0 0 27px;
+}
+.list-wrapper .liner {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 800;
+  background: linear-gradient(0deg, #8AABFF 50%, transparent 50%);
+}
+
+/* image */
+.list-wrapper .image-list .list1 {
+  height: 142px;
+  position: relative;
+}
+.list-wrapper .image-list .list1 h3 {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 62px;
+  left: 125px;
+}
+.list-wrapper .image-list .list1 > img {
+  filter: brightness(85%);
+  border-radius: 20px;
+}
+.list-wrapper .image-list p {
+  margin: 15px 16px 32px;
+  font-size: 15px;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.list-wrapper .image-list .list2 {
+  height: 142px;
+  position: relative;
+}
+.list-wrapper .image-list .list2 h3 {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 62px;
+  left: 136px;
+}
+.list-wrapper .image-list .list2 > img {
+  height: 142px;
+  border-radius: 20px;
+}
+.list-wrapper .image-list p {
+  margin: 15px 16px 32px;
+  font-size: 15px;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.list-wrapper .image-list .list3 {
+  height: 142px;
+  position: relative;
+}
+.list-wrapper .image-list .list3 h3 {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 62px;
+  left: 110px;
+}
+.list-wrapper .image-list .list3 > img {
+  filter: brightness(85%);
+  height: 142px;
+  border-radius: 20px;
+}
+.list-wrapper .image-list p {
+  margin: 15px 16px 32px;
+  font-size: 15px;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.list-wrapper .image-list .list4 {
+  height: 142px;
+  position: relative;
+}
+.list-wrapper .image-list .list4 h3 {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 62px;
+  left: 113px;
+}
+.list-wrapper .image-list .list4 > img {
+  filter: brightness(85%);
+  height: 142px;
+  border-radius: 20px;
+}
+.list-wrapper .image-list p {
+  margin: 15px 16px 32px;
+  font-size: 15px;
+  line-height: 1.5rem;
+  text-align: left;
+}

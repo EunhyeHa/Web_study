@@ -1,0 +1,50 @@
+@charset "UTF-8" ; 
+  
+/***** fonts *****/
+@import url('../asset/styles/spoqaHanSan.css');
+
+
+body {
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'SpoqaHanSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', '맑은 고딕', 돋움, sans-serif;
+  font-weight: 400;
+}
+
+/***** article *****/
+article {
+  font-weight: 700;
+  
+  font-size: 4rem;
+  text-transform: capitalize;
+  height: 300vh;
+  margin-top: 200px;
+}
+
+/***** header *****/
+.wrapper {
+  width: 100%;
+  /* position: relative; */
+}
+.wrapper header h1 {
+  width: 100%;
+  background-color: plum;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding: 20px;
+
+  /* position: relative; */
+}
+
+/* 메뉴 */
+.wrapper header .gnb { 
+  font-size: 1.2rem;
+  background-color: wheat;
+  padding: 10px;
+  display: flex;
+
+
+}
+
+.wrapper header .gnb li:hover {}

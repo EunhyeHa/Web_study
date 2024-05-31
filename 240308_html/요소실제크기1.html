@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>요소실제크기1</title>
+  <!-- 실제크기에는 border,margin,padding이 모두 영향을 줌, 31줄 참고 -->
+  <!-- outline은 실제값 계산할 때 해당되지 않음!!!!!!!!!!!! -->
+  <style>
+    .box {
+      width: 500px;
+      height: 300px;
+      font-weight: bold;
+    }
+    .box1 {
+      border: 10px solid #c95a00;
+      background-color: #eebbf8;
+      margin: 10px; padding: 10px;
+    }
+
+    .box2 {
+      outline: 30px solid forestgreen;
+      background-color:darkmagenta;
+      color: #fff;
+      margin: 30px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>요소의 실제 크기 1</h1>
+  <h2>width + margin-left + margin-right + padding-left + padding-right + border-left + border-right</h2>
+  <h2>height + margin-top + margin-bottom + padding-top + padding-bottom + border-top + border-bottom</h2>
+
+  <!-- .box.box$+2>h3+p*2의 결과값 아래 14열 부터~ -->
+
+  <div class="box box1">
+    <h3>border</h3>
+    <p>.box1의 실제 너비: w500+m10+m10+p10+p10+b10+b10=560px</p>
+    <p>.box1의 실제 높이: h300+m10+m10+p10+p10+b10+b10=360px</p>
+  </div>
+  <div class="box box2">
+    <h3>border</h3>
+    <p>.box2의 실제 너비: w500+m30+m30+p10+p10+b0+b0=580px</p>
+    <p>.box2의 실제 높이: h300+m30+m30+p10+p10+b0+b0=380px</p>
+  </div>
+</body>
+</html>

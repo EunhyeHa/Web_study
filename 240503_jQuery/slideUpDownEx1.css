@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+  text-align: center;
+}
+header, main {
+  height: 500px;
+  background-color: #ddd;
+  font-weight: bold;
+  font-size: 3rem;
+}
+main { 
+  background-color: lightblue;
+}
+
+/* 대메뉴 */
+nav {
+  position: fixed;
+  background-color: #03AED2;
+  width: 100%;
+  top:0;
+  height: 60px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+nav a {
+  display: block;
+}
+nav .global-menu {
+  /* background-color: #FFC100; */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 200px));
+  justify-content: center;
+}
+nav .global-menu li {
+  width: 100%;
+}
+nav .global-menu > li > a {
+  height: 60px;
+  line-height: 60px;
+}
+nav .global-menu > li > a:hover {
+  background-color: #fff;
+  color:#03AED2;
+}
+nav .global-menu li .sub-menu {
+  display: none;
+  background-color: #68D2E8;
+  height: 260px;
+}
+nav .global-menu li .sub-menu li a {
+  font-weight: normal;
+  line-height: 50px;
+}
+nav .global-menu li .sub-menu li a:hover {
+  background-color: #fff;
+}

@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+.footer {
+  background-color: #F5F5F5;
+  text-align: center;
+}
+.footer .title h1 {
+  margin: 0;
+  padding: 75px 0 20px;
+  font-size: 27px;
+  font-weight: 800;
+}
+.footer .title h1 span {
+  background: linear-gradient(0deg, #8AABFF 50%, transparent 50%);
+}
+.footer .title p {
+  margin: 0 0 25px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #525252;
+}
+
+/* form */
+.footer .form-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  /* place-items: start; */
+}
+.footer .form-wrapper .form1 {
+  text-align: left;
+  width: 96px;
+}
+.footer .form-wrapper .box1 {
+  height: 42px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.footer .form-wrapper .form1 p {
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0 0 5px;
+}
+
+.footer .form-wrapper .form2 {
+  text-align: left;
+  width: 96px;
+}
+.footer .form-wrapper .box2 {
+  height: 42px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.footer .form-wrapper .form2 p {
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0 0 5px;
+}
+
+.footer .form-wrapper .form3 {
+  text-align: left;
+  width: 96px;
+}
+.footer .form-wrapper .box3 {
+  height: 42px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.footer .form-wrapper .form3 p {
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0 0 5px;
+}
+
+/* form4 */
+.footer .form4 {
+  margin: 22px;
+}
+.footer .form4 p {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 800;
+  margin: 15px 0 5px;
+}
+
+.footer .form4 .box4 {
+  height: 116px;
+  background-color: #fff;
+  border-radius: 8px;
+}

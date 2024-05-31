@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* 'Pretendard', sans-serif; */
+@import url(../assets/styles/pretendard-subset.css);
+/* 
+  "Kanit", sans-serif; 400, 500, 700
+  "Lobster", sans-serif; 400
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&family=Lobster&display=swap');
+
+/* common */
+body {
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  padding: 20px;
+  /* background-color: #ddd; */
+}
+header .info {
+  display: flex;
+  gap: 20px;
+}
+header.colorChange .logo {
+  fill : #fff;
+}
+
+/* nav */
+.side-menu {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+.side-menu li a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+}
+.side-menu li a .dot {
+  width: 16px; height: 16px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+.side-menu li a .menu-label {
+  opacity: 0;
+}
+.side-menu li a:hover .menu-label {
+  opacity: 1;
+}
+.side-menu li.active a .menu-label {
+  opacity: 1;
+  transform: scale(1.4);
+  font-weight: 500;
+}
+/* 
+.side-menu li:nth-child(1).active a .dot {
+  background-color: #E3D9BF;
+}
+.side-menu li:nth-child(2).active a .dot {
+  background-color: #00394f;
+} 
+*/
+
+/* main.contents */
+.contents {
+  width: 100%;
+  height: 100vh;
+}
+.contents .box {
+  width: 100%; height: 100%;
+  display: grid;
+  place-content: center;
+}
+.contents #box1 { background: #E3D9BF url(./images/bg1.png) no-repeat fixed 50% ;}
+.contents #box2 { background: #00394f url(./images/bg2.png) no-repeat fixed 50% ;}
+.contents #box3 { background: #be2934 url(./images/bg3.png) no-repeat fixed 50% ;}
+.contents #box4 { background: #69375c url(./images/bg4.png) no-repeat fixed 50% ;}

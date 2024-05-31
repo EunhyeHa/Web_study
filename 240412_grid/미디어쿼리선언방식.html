@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>미디어쿼리선언방식</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- 내부 선언 -->
+  <style>
+    body {
+      margin: 0;
+      text-align: center;
+    }
+    /* 모바일 기준 */
+
+    /* 768px */
+    @media (max-width: 768px) { /* 스크린 가로 크기 최대 768이하면 적용 */
+      h1 {
+        font-size: 20px;
+        margin: 0;
+        padding: 20px;
+        background-color: lightgreen;
+        color: #fff;
+      }
+      h2 {
+        font-size: 20px;
+        margin: 0;
+        padding: 20px;
+        background-color: lightpink;
+        color: #fff;
+      }
+      .container .box1 {
+        margin: 0 auto;
+        width: 80vw;
+        padding-bottom: 100px;
+        background-color: lightblue;
+      }
+      .container .box2 {
+        margin: 0 auto;
+        width: 80vw;
+        padding-bottom: 100px;
+        background-color: blanchedalmond;
+      }
+      .container .box3 {
+        margin: 0 auto;
+        width: 80vw;
+        padding-bottom: 100px;
+        background-color: plum;
+      }
+    }
+    /* 1200px */
+  </style>
+</head>
+<body>
+  <h1>미디어쿼리 <strong>선언 방식</strong></h1>
+  <h2>내부 선언과<br> 외부선언</h2>
+  <div class="container">
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+  </div>
+</body>
+</html>

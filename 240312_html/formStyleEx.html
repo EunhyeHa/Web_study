@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>formStyleEx</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <!-- CDN -->
+  <link href="https://fonts.googleapis.com/">
+
+  <!-- 외부선언 -->
+  <link rel="stylesheet" href="formStyleEx.css">
+
+
+  <!-- <style>
+    form {
+      width: 500px; height: 200px;
+      background-color: chocolate;
+      margin: auto;
+      padding: 50px 50px 0px 50px;
+    }
+    .name {
+      font-size: 15px;
+      font-weight: bold;
+      padding: 5px 12px 5px;
+      background-color: #c7e4fd;
+      color: sienna;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    label {
+      color: #c7e4fd;
+      font-size: 15px;
+      margin: 10px;
+    }
+  </style> -->
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>회원가입</legend>
+      <label for="userName">이름 : </label>
+      <input type="text" id="userName" name="userName" required autofocus> 
+      <br>
+      <label for="userEmail">이메일 : </label>
+      <input type="text" id="userEmail" name="userEmail">
+      <br>
+
+      <button type="submit">가입</button>
+      <button type="reset">취소</button>
+    </fieldset>
+</body>
+</html>

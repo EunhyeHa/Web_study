@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap') */
+
+header {
+  position: fixed;
+  width: 100%;
+  /* background-color: #ddd; */
+  z-index: 9999;
+  text-transform: capitalize;
+}
+header .header-wrapper {
+  max-width: 19000px;
+  min-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+
+  justify-content: space-between;
+}
+header .header-wrapper .logo {
+  width: 99.8px;
+  height: 100%;
+  background: url(./assets/images/logo.png) no-repeat 0 50% / contain;
+  text-indent: -9999px;
+  margin: 0 2%;
+}
+header .header-wrapper .global-nav {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  width: 50%; height: 100%;
+}
+header .header-wrapper .global-nav li {
+
+  height: 100%;
+}
+header .header-wrapper .global-nav li a {
+  text-decoration: none;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}

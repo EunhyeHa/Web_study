@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <style>
+    /* 
+    스톱워치 만들기
+    - 시, 분, 초 모두 두 자리 숫자 (00:00:00)
+    - 버튼을 누르면 스톱워치가 멈춤 
+    - 버튼을 누를 때마다 7가지 배경색이 매번 다르게 바뀜
+    */
+    
+    body {
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    #stopwatch {
+      font-size: 5em;
+      margin-top: 50px;
+    }
+    #btn {
+      margin-top: 10px;
+      padding: 15px 45px;
+      font-size: 2.5em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="stopwatch">00:00:00</div>
+  <button id="btn">Start / Stop</button>
+
+  <script src="stopwatch.js"></script>
+</body>
+</html>

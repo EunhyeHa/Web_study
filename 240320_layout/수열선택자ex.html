@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>수열선택자ex</title>
+  <style>
+    /* 
+      마우스 이벤트
+      1, 5, 9 같은색상
+      2, 4, 6, 8 같은색상
+      3, 7 같은색상 */
+    
+    .gnb { /* li를 정렬 하고싶을 때 그 부모에 적용 */
+      text-align: center;
+      padding: 20px;
+      list-style: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 50px auto;
+      display: flex;
+      justify-content: space-evenly;
+      /* background-color: #ddd; */
+      width: 70vw;
+      border-radius: 70px;
+    }
+    .gnb li {
+      width: 11.111111%;
+    }
+    .gnb li a {
+      text-decoration: none;
+      color: inherit;
+      /* background-color: #ddd; */
+      /* display: block;
+      line-height: 50px; */
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* 1,9번에 둥글기 값 주기 */
+    .gnb li:first-child a { /* 첫번째 자식 li의 a */
+      border-radius: 40px 0 0 40px;
+    }
+    .gnb li:last-child a { /* 마지막 자식 li의 a */
+      border-radius: 0 40px 40px 0;
+    }
+
+    /* 2,4,6,8 */
+    .gnb li:nth-child(even) a {
+      background-color: skyblue;
+    }
+    /* 1, 5, 9 a
+    .gnb li:nth-child(1) a,
+    .gnb li:nth-child(5) a,
+    .gnb li:nth-child(9) a {
+      background-color: #FFC700;
+    }
+    */
+    .gnb li:nth-child(4n+1) a {
+      background-color: #FFC700;
+     }
+
+    /* 3, 7 a */
+    .gnb li:nth-child(4n+3) a {
+      background-color: #ACE2E1;
+    }
+
+    .gnb li a:hover {
+      background-color: thistle;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul class="gnb">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#">9</a></li>
+  </ul>
+
+  
+</body>
+</html>

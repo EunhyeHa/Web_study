@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>positionEx4</title>
+  <style>
+    body {
+      color: #fff;
+      margin: auto;
+    }
+    header, footer {
+      height: 100px;
+      background-color: #281e6b; 
+    }
+    .contents {
+      /* background-color: #ddd; */
+      display: flex;
+    }
+    .contents article {
+      background-color: thistle;
+      width: 70%;
+      height: 300vh;
+    }
+    .contents aside {
+      background-color: burlywood;
+      width: 30%;
+      height: 150px;
+
+      position: sticky;
+      top: 0; 
+      /* 0: 디스플레이의 최상단, 50% : 해당 영역의 중간(화면자제의 중앙이 아님) */
+    }
+
+
+    /* .container {
+      margin: auto; padding: 0;
+      list-style: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .container .box1 {
+      width: 60%; height: 800px;
+      background-color: #3a10ad;
+      padding: 20px;
+    }
+    .container .box2 {
+      width: 40%; height: 200px;
+      background-color: #ae00ff;
+      padding: 20px;
+      display: flex; 
+    } */
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>positionEx4</h1>
+    <h2>header</h2>
+  </header>
+  <div class="contents">
+    <article>
+      <h2>main contents</h2>
+    </article>
+    <aside>
+      <h2>sticky sidebar</h2>
+    </aside>
+  </div>
+  <footer>
+    <h2>footer</h2>
+  </footer>
+</body>
+</html>
