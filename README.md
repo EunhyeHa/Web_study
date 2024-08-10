@@ -1,4 +1,11 @@
 # 공부내용 정리
+
+## 240528 - React 시작
+- CRP 설치
+- 사전 설정 관련 공부: node, VSCode Extentions-Reacts code snippets, react emmit 등
+- 프로젝트 생성 및 간단 활용
+- 폴더 생성 후 관리 방법
+
 ## 240509 - 10
 - slide 예제 풀이
 
@@ -189,14 +196,64 @@ blend-modes?ref=sidebar)
   2) display 예제 풀이
 
 ## 240312
+- 집중 복습의 날!!
 - form style 예제 풀이 : 외부선언 문서 작성법
 - table 스타일 css 작성방법
+
+## 240311
+- 요소 실제 크기 계산법 리마인드
+- box-sizing 두가지 방법
+- overflow
+
+## 240308
+- border-radius
+- 태그 줄임말 활용 방법
+
+## 240307
+- box 모델
+  1) margin
+  2) padding(https://emmet.io/)
+  3) border
+- margin 상쇄현상(일반적인 흐름에서)
+  1) 형제 관계 요소의 margin-bottom과 margin-top이 만나면 둘 중 큰 값이 적용
+  2) 부모 자식 관계 요소에서 margin-top의 값이 같이 들어간 경우 둘 중 큰 값이 적용
+
+## 240306
+- a 링크
+- inherit
+- font 적용
+- 속성/특성 선택자
+- 선택자/형제 선택자 
 
 ## 240304 - CSS 시작!
 - html open graph protocol 적용법 
 
 ## 240229 - 평가
 - 웹페이지 똑같이 제작(일러스트, 포토샵)
+
+## 240228
+- form 태그
+- button 관련 태그
+  1) 라디오 버튼
+  2) 드롭다운
+- input file
+- video 태그 : poster, autoplay, mute, loop, controls, perload
+
+## 240227
+- table 태그 기본 
+  <table border="1">
+    <tr><!-- 행(줄)-->
+      <th>소제목</th> <!-- 셀(칸)-->
+      <td>셀</td> <!-- 셀(칸)-->
+      <td>칸</td> <!-- 셀(칸)-->
+    </tr>
+  </table>
+- 열병합, 행병합
+- form 태그
+- 숫자 단위 입력하는 방법
+  1) 예시: \500,000 -> W500,000 으로 입력
+ 
+
 
 ## 240226
 - VSCode 본격 사용시작, 단축키 설정
@@ -242,53 +299,3 @@ blend-modes?ref=sidebar)
 ## 240214
 - git 설치 및 기본용어/명령어 공부
 - gitHub 계정 생성/ 활용방법 습득
-  
-
-240226_works
-- 이미지 파일과 인라인 요소에 대해서 배움.
-
-3월 11일 과제 진행..
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <title>formStyleEx</title>
-  <style>
-    body {
-      margin: auto;
-    }
-    form {
-      width: 500px; height: 250px;
-      background-color: chocolate;
-      margin: auto;
-      padding: 100px 50px 0px 50px;
-    }
-    .name {
-      font-size: 15px;
-      font-weight: bold;
-      padding: 10px;
-      background-color: #c7e4fd;
-      color: sienna;
-      border-radius: 20px;
-      margin-bottom: 10px;
-    }
-    label {
-      color: #c7e4fd;
-      font-size: 15px;
-      margin: 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <form>
-    <fieldset class="form">
-      <legend class="name">회원가입</legend>
-      <label for="userName">이름 : </label>
-      <input type="text" id="user_name" autofocus> <br>
-      <label for="userName">이메일 : </label> <br>
-      <button type="submit">가입</button>
-      <button type="submit">취소</button>
-    </fieldset>
-</body>
-</html>
