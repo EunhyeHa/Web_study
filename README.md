@@ -158,9 +158,9 @@ blend-modes?ref=sidebar)
 - bg 예제 풀이
 - svg 파일 활용법
 - flexitem
-  1)flex-grow : 숫자가 큰만큼 증가
-  2)flex-shrink : 숫자가 큰만큼 감소
-  3)order : 아이템 배치 순서 결정
+  1) flex-grow : 숫자가 큰만큼 증가
+  2) flex-shrink : 숫자가 큰만큼 감소
+  3) order : 아이템 배치 순서 결정
 
 ## 240320
 - 수열선택자 예제 풀이
